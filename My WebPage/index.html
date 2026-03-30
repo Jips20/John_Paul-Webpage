@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Nenita's Bayad Latur Services</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar">
+    <div class="brand">
+        <a href="#" class="brand-logo">
+            <img src="MyLogo.png" alt="Nenita's Bayad Latur Logo">
+        </a>
+        <span class="brand-name">Nenita's Bayad Latur Services</span>
+    </div>
+
+    <!-- BACK BUTTON -->
+    <a href="../index.html" class="back-home">← Home</a>
+</nav>
+
+<!-- ================= HERO SECTION ================= -->
+<section class="hero fade">
+    <img src="MyLogo.png" alt="Company Logo" class="hero-logo">
+    <h1>Nenita's Bayad Latur Services</h1>
+    <p>Fast, Reliable, and Trusted Services for Sari-Sari Store</p>
+</section>
+
+<!-- ================= INFO SECTION ================= -->
+<section class="info fade">
+    <div class="card">
+        <h3>Mission</h3>
+        <p>
+            To provide the community with reliable and convenient services, combining the trust of a neighborhood store
+            with modern solutions like mobile load and GCash transactions.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Vision</h3>
+        <p>
+            To be the trusted neighborhood hub for daily needs and digital transactions, offering fast, safe,
+            and friendly service to all customers.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Motto</h3>
+        <p>
+            “Serbisyo na Maaasahan, Transaksyon na Mabilis.”<br>
+            Reliable service, quick transactions, happy customers.
+        </p>
+    </div>
+</section>
+
+<!-- ================= PRODUCTS / SERVICES ================= -->
+<section class="products fade">
+    <h2 id="product-title">Product Categories</h2>
+
+    <!-- CATEGORY VIEW -->
+    <div id="categories" class="product-grid">
+
+        <!-- Category Card Template -->
+        <div class="product-card" onclick="showCategory('powder_milk')">
+            <img src="POWDER MILK.png" alt="Powder Milk">
+            <h4>Powder Milk</h4>
+            <p>Milk & chocolate drinks</p>
+        </div>
+
+        <div class="product-card" onclick="showCategory('powder_detergents')">
+            <img src="POWDER DETERGENTS.png" alt="Powder Detergents">
+            <h4>Powder Detergents</h4>
+            <p>Laundry powders</p>
+        </div>
+
+        <div class="product-card" onclick="showCategory('ready_drink_juice')">
+            <img src="READY TO DRINK JUICE.png" alt="Ready to Drink Juice">
+            <h4>Ready To Drink Juice</h4>
+            <p>Juices & drinks</p>
+        </div>
+
+        <div class="product-card" onclick="showCategory('alcohol')">
+            <img src="ALCOHOL.png" alt="Alcohol">
+            <h4>Alcohol</h4>
+            <p>Liquors & spirits</p>
+        </div>
+
+        <div class="product-card" onclick="showCategory('cigarettes')">
+            <img src="CIGARETTES.png" alt="Cigarettes">
+            <h4>Cigarettes</h4>
+            <p>Tobacco products</p>
+        </div>
+
+        <div class="product-card" onclick="showCategory('coffee')">
+            <img src="COFFEE.png" alt="Coffee">
+            <h4>Coffee</h4>
+            <p>3in1 & sachets</p>
+        </div>
+
+        <div class="product-card" onclick="showCategory('softdrinks')">
+            <img src="SOFTDRINKS.png" alt="Softdrinks">
+            <h4>Softdrinks</h4>
+            <p>Cold beverages</p>
+        </div>
+
+    </div>
+
+    <!-- PRODUCT LIST VIEW -->
+    <div id="product-list" class="product-grid" hidden></div>
+
+    <!-- BACK BUTTON -->
+    <button id="back-btn" class="back-btn" onclick="goBack()" hidden>
+        ← Back to Categories
+    </button>
+</section>
+
+<!-- ================= FLOATING BUTTONS ================= -->
+<div class="floating-buttons">
+    <button onclick="openModal('about')">About</button>
+    <button onclick="openModal('contact')">Contact</button>
+    <button onclick="openModal('location')">Location</button>
+</div>
+
+<!-- ================= MODAL ================= -->
+<div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+        <button class="close" onclick="closeModal()" aria-label="Close">&times;</button>
+        <p id="modal-text"></p>
+    </div>
+</div>
+
+<!-- ================= SCRIPT ================= -->
+<script src="script.js"></script>
+
+</body>
+</html>

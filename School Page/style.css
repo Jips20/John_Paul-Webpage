@@ -1,0 +1,328 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    padding-top:70px;
+    background: linear-gradient(270deg,#e6e0ff,#d9ccff,#cbb8ff,#e6e0ff);
+    background-size:600% 600%;
+    animation:bgMove 15s ease infinite;
+}
+
+@keyframes bgMove{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+/* NAVBAR */
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 16px 40px;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    box-shadow: 0 0 30px rgba(106,90,205,0.4);
+    transition: box-shadow .3s ease;
+}
+
+.navbar.scrolled{
+    box-shadow: 0 8px 30px rgba(106,90,205,0.3);
+}
+
+.navbar::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-2px;
+    width:100%;
+    height:3px;
+    background: linear-gradient(90deg,#ff9a9e,#fad0c4,#a1c4fd,#c2e9fb);
+    animation: glowLine 5s linear infinite;
+}
+
+@keyframes glowLine{
+    0%{filter:hue-rotate(0deg);} 
+    100%{filter:hue-rotate(360deg);} 
+}
+
+.brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.brand img{
+    width:40px;
+}
+
+.brand span{
+    font-weight:bold;
+}
+
+/* HERO */
+.hero{
+    text-align:center;
+    padding:100px 20px;
+    background: url('hero-bg.jpg') center/cover fixed no-repeat;
+    position:relative;
+    overflow:hidden;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background: radial-gradient(circle,rgba(255,255,255,0.25),transparent 70%);
+    animation: pulseGlow 4s ease-in-out infinite;
+}
+
+@keyframes pulseGlow{
+    0%,100%{opacity:.3;} 
+    50%{opacity:.7;} 
+}
+
+.hero-logo{
+    width:300px;
+    margin-bottom:20px;
+    transition: transform 1s ease;
+}
+
+.hero-logo:hover{
+    transform: scale(1.1) rotate(-2deg);
+}
+
+.hero h1,.hero p{
+    opacity:0;
+    transform: translateY(20px);
+    transition: all 1s ease;
+}
+
+.hero.show h1{opacity:1;transform:translateY(0);transition-delay:.3s;}
+.hero.show p{opacity:1;transform:translateY(0);transition-delay:.6s;}
+
+.hero h1{
+    font-size:42px;
+    background: linear-gradient(90deg,#6a5acd,#eb9aff,#8b7cf6);
+    -webkit-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color:transparent;
+    animation:textFlow 6s linear infinite;
+}
+
+.hero p{
+    font-size:18px;
+    color:#666;
+}
+
+@keyframes textFlow{
+    0%{filter:hue-rotate(0deg);} 
+    100%{filter:hue-rotate(360deg);} 
+}
+
+/* SECTION */
+.section{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.section h2{
+    margin-bottom:30px;
+}
+
+/* CARDS */
+.info{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:50px 20px;
+    flex-wrap:wrap;
+}
+
+.card {
+    width: 90%;          /* makes the card take up most of the screen on small devices */
+    max-width: 600px;    /* keeps it reasonable on large screens */
+    margin: 20px auto;   /* centers the card */
+    padding: 25px;
+    border-radius: 24px;
+    background: rgba(255,255,255,0.18);
+    backdrop-filter: blur(20px);
+    box-shadow: 
+        0 20px 40px rgba(0,0,0,0.25),
+        inset 0 1px 1px rgba(255,255,255,0.4);
+    position: relative;
+    overflow: hidden;
+    text-align: justify;   /* ensures text wraps nicely */
+    line-height: 1.6;
+}
+
+.card::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background: linear-gradient(120deg,#ff6ec4,#7873f5,#42e695,#f6d365);
+    background-size:400% 400%;
+    filter:blur(40px);
+    opacity:.5;
+    z-index:-1;
+    animation: gradientMove 10s ease infinite;
+}
+
+@keyframes gradientMove{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+.card:hover{
+    transform: translateY(-15px) scale(1.05);
+    box-shadow:0 20px 60px rgba(0,0,0,.4);
+}
+
+.card h3{
+    font-size:1.6rem;
+    background: linear-gradient(90deg,#6a5acd,#ff9a9e);
+    -webkit-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.card p{
+    font-size:1rem;
+    line-height:1.6;
+    text-align:justify;
+    text-indent:15px;
+}
+
+/* GRID */
+.grid{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.grid .card{
+    width:280px;
+}
+
+/* FADE ANIMATION */
+.fade{
+    opacity:0;
+    transform:translateY(30px);
+    transition:.8s;
+}
+
+.fade.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* ================= 3D CARD EFFECT ================= */
+/* ================= APPLE-STYLE FLOAT CARDS ================= */
+.card{
+    max-width:600px;
+    margin:auto;
+    padding:25px;
+    border-radius:24px;
+
+    background: rgba(255,255,255,0.18);
+    backdrop-filter: blur(20px);
+
+    box-shadow: 
+        0 20px 40px rgba(0,0,0,0.25),
+        inset 0 1px 1px rgba(255,255,255,0.4);
+
+    transform-style: preserve-3d;
+    transition: transform .2s ease, box-shadow .2s ease;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.card::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    border-radius:24px;
+    border:1px solid rgba(255,255,255,0.25);
+    pointer-events:none;
+}
+
+/* Glow effect */
+.card::before{
+    content:"";
+    position:absolute;
+    inset:-2px;
+    background: linear-gradient(120deg,#a18cd1,#fbc2eb,#8ec5fc,#e0c3fc);
+    background-size:400% 400%;
+    filter:blur(30px);
+    opacity:0.4;
+    z-index:-1;
+    animation: glowMove 10s linear infinite;
+}
+
+@keyframes glowMove{
+    0%{background-position:0% 50%;}
+    100%{background-position:100% 50%;}
+}
+
+.card:hover{
+    transform:
+        rotateY(var(--currentX, 0deg))
+        rotateX(var(--currentY, 0deg))
+        scale(1.07);
+
+    background: rgba(255,255,255,0.25);
+
+    box-shadow:
+        0 30px 80px rgba(0,0,0,0.45),
+        0 0 60px rgba(140,120,255,0.7),
+        inset 0 0 20px rgba(255,255,255,0.25);
+}
+
+.card .shine{
+    position:absolute;
+    inset:0;
+    border-radius:24px;
+    background: radial-gradient(circle at var(--x,50%) var(--y,50%), rgba(255,255,255,0.4), transparent 60%);
+    opacity:0;
+    transition: opacity .2s;
+    pointer-events:none;
+}
+
+/* ================= LOCATION BUTTON STYLING ================= */
+#showLocation {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+#showLocation:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* ================= LOCATION SECTION CENTERING ================= */
+.section .card {
+    display: flex;
+    flex-direction: column; /* stack text and button vertically */
+    align-items: center;    /* center horizontally */
+    justify-content: center; /* center vertically if card has height */
+    text-align: center;     /* center text inside card */
+    padding: 30px;          /* optional: add some padding */
+}
