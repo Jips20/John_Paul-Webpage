@@ -15,7 +15,19 @@ const modalContent = {
         <strong>Nenita's Bayad Latur Services:</strong><br><br> &nbsp;&nbsp;&nbsp;&nbsp;Began in <strong>2006</strong> as a small neighborhood mini sari-sari store in Barangay Kristong Hari, Manila. Initially, it catered to the daily needs of the local community, providing essential goods, snacks, and household items.<br><br> &nbsp;&nbsp;&nbsp;&nbsp;Over time, the store evolved to meet the changing demands of the community. In response to the rise of digital services, Nenita's Bayad Latur Services expanded its offerings to include mobile load top-ups, bills payment, and GCash in/out transactions. This evolution transformed the store into a trusted one-stop shop for both daily needs and modern payment solutions.<br><br> &nbsp;&nbsp;&nbsp;&nbsp;Today, Nenita's Bayad Latur Services continues to serve the community with a focus on <strong>convenience, reliability, and friendliness</strong>, maintaining its roots as a neighborhood store while embracing modern financial services.
     `,
     contact: "📞 0912-345-6789<br>📧 nenitaservices@email.com",
-    location: "📍 Barangay Kristong Hari, Metro Manila, Quezon City"
+    location: `
+    <h3>📍 Our Location</h3>
+    <p>82 U, Barangay Kristong Hari, Quezon City, Metro Manila</p>
+
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7721.10400230007!2d121.02682953804187!3d14.624578224731842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b64a9784ad5b%3A0x6133c7e147a57c8e!2sKristong%20Hari%2C%20Quezon%20City%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1774973299508!5m2!1sen!2sph"
+        width="100%" 
+        height="300"
+        style="border:0; border-radius:10px;"
+        allowfullscreen=""
+        loading="lazy">
+    </iframe>
+`
 };
 
 function openModal(type) {
