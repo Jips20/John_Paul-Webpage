@@ -88,58 +88,58 @@ function navbarScroll() {
 const products = {
 
     powder_milk: [
-        { name: "Birch Tree Fortified Choco", image: "birch-tree.jpg", desc: "Chocolate milk powder", price: 10 },
-        { name: "Bear Brand Fortified", image: "bear-brand.jpg", desc: "Fortified milk", price: 11 },
-        { name: "Milo Activ-Go Choco", image: "milo.jpg", desc: "Energy chocolate drink", price: 9 }
+        { name: "Birch Tree Fortified", image: "birch-tree.jpg", desc: "33g - per sachet", price: 10 },
+        { name: "Bear Brand Fortified", image: "bear-brand.jpg", desc: "33g - per sachet", price: 10 },
+        { name: "Milo Activ-Go Choco", image: "milo.jpg", desc: "24g - per sachet", price: 9 }
     ],
 
     powder_detergents: [
-        { name: "Surf Cherry Blossom", image: "Powder Detergent final.png", desc: "Floral scent detergent", price: 7 },
-        { name: "Surf Rose", image: "surf-rose.jpg", desc: "Rose scent detergent", price: 7 },
-        { name: "Surf Sun Fresh", image: "surf-sun.jpg", desc: "Fresh scent detergent", price: 7 },
-        { name: "Surf Kalamansi", image: "surf-kalamansi.jpg", desc: "Citrus scent detergent", price: 7 },
-        { name: "Ariel Sunrise", image: "ariel-sunrise.jpg", desc: "Power clean detergent", price: 14 },
-        { name: "Tide", image: "tide.jpg", desc: "Strong stain remover", price: 15 },
-        { name: "Tide with Downy Garden Bloom", image: "tide-downy-garden.jpg", desc: "Soft + clean", price: 15 },
-        { name: "Tide with Downy Perfume Fantasy", image: "tide-downy-fantasy.jpg", desc: "Perfume scent", price: 15 }
+        { name: "Surf Cherry Blossom", image: "Powder Detergent final.png", desc: "65g - per sachet", price: 7 },
+        { name: "Surf Rose", image: "surf-rose.jpg", desc: "65g - per sachet", price: 7 },
+        { name: "Surf Sun Fresh", image: "surf-sun.jpg", desc: "65g - per sachet", price: 7 },
+        { name: "Surf Kalamansi", image: "surf-kalamansi.jpg", desc: "65g - per sachet", price: 7 },
+        { name: "Ariel Sunrise", image: "ariel-sunrise.jpg", desc: "Twin Pack - 66g - per sachet", price: 12 },
+        { name: "Tide", image: "tide.jpg", desc: "Twin Pack - 67g - per sachet", price: 15 },
+        { name: "Tide with Downy Garden Bloom", image: "tide-downy-garden.jpg", desc: "Twin Pack - 67g - per sachet", price: 15 },
+        { name: "Tide with Downy Perfume Fantasy", image: "tide-downy-fantasy.jpg", desc: "Twin Pack - 67g - per sachet", price: 15 }
     ],
 
     ready_drink_juice: [
-        { name: "BIG 250 Apple", image: "big-apple.jpg", desc: "Apple juice", price: 11 },
-        { name: "BIG 250 Grape", image: "big-grape.jpg", desc: "Grape juice", price: 11 },
-        { name: "BIG 250 Mango", image: "big-mango.jpg", desc: "Mango juice", price: 11 },
-        { name: "BIG 250 Orange", image: "big-orange.jpg", desc: "Orange juice", price: 11 }
+        { name: "BIG 250 Apple", image: "big-apple.jpg", desc: "250ml - per pouch", price: 11 },
+        { name: "BIG 250 Grape", image: "big-grape.jpg", desc: "250ml - per pouch", price: 11 },
+        { name: "BIG 250 Mango", image: "big-mango.jpg", desc: "250ml - per pouch", price: 11 },
+        { name: "BIG 250 Orange", image: "big-orange.jpg", desc: "250ml - per pouch", price: 11 }
     ],
 
     alcohol: [
-        { name: "Ginebra Gin Round", image: "ginebra.jpg", desc: "Local gin", price: 68 },
-        { name: "Alfonso 1 Light Brandy", image: "alfonso.jpg", desc: "Premium brandy", price: 279 },
-        { name: "Emperador Light Litro (1L)", image: "emperador.jpg", desc: "Brandy 1 liter", price: 183 }
+        { name: "Ginebra Gin Round", image: "ginebra.jpg", desc: "350ml - per bottle", price: 68 },
+        { name: "Alfonso 1 Light Brandy", image: "alfonso.jpg", desc: "1L - per bottle", price: 279 },
+        { name: "Emperador Light Litro", image: "emperador.jpg", desc: "1L - per bottle", price: 183 }
     ],
 
     cigarettes: [
-        { name: "Winston Red", image: "winston.jpg", desc: "20 sticks", price: 182 },
-        { name: "Fortune Green", image: "fortune.jpg", desc: "Green", price: 147 },
+        { name: "Winston Red", image: "winston.jpg", desc: "₱10 per stick | 20 sticks - per pack - ", price: 182 },
+        { name: "Fortune Green", image: "fortune.jpg", desc: "₱8 per stick | 20 sticks - per pack - ", price: 147 }
     ],
 
     coffee: [
-        { name: "Nescafe Creamy White 3in1", image: "nescafe-creamy.jpg", desc: "3in1 coffee", price: 14 },
-        { name: "Nescafe Original 3in1", image: "nescafe-original.jpg", desc: "3in1 coffee", price: 14 },
-        { name: "Great Taste Chocolate 3in1", image: "gt-choco.jpg", desc: "3in1 coffee", price: 13 },
-        { name: "Great Taste White 3in1", image: "gt-white.jpg", desc: "3in1 coffee", price: 12 },
-        { name: "Kopiko Black 3in1", image: "kopiko-black.jpg", desc: "3in1 coffee", price: 13 },
-        { name: "Kopiko Brown 3in1", image: "kopiko-brown.jpg", desc: "3in1 coffee", price: 13 },
-        { name: "Kopiko Blanca 3in1", image: "kopiko-blanca.jpg", desc: "3in1 coffee", price: 13 }
+        { name: "Nescafe Creamy White 3in1", image: "nescafe-creamy.jpg", desc: "Twin Pack - 40g - per sachet", price: 14 },
+        { name: "Nescafe Original 3in1", image: "nescafe-original.jpg", desc: "Twin Pack - 40g - per sachet", price: 14 },
+        { name: "Great Taste Chocolate 3in1", image: "gt-choco.jpg", desc: "Twin Pack - 33g - per sachet", price: 13 },
+        { name: "Great Taste White 3in1", image: "gt-white.jpg", desc: "Twin Pack - 33g - per sachet", price: 13 },
+        { name: "Kopiko Black 3in1", image: "kopiko-black.jpg", desc: "Twin Pack - 40g - per sachet", price: 13 },
+        { name: "Kopiko Brown 3in1", image: "kopiko-brown.jpg", desc: "Twin Pack - 40g - per sachet", price: 13 },
+        { name: "Kopiko Blanca 3in1", image: "kopiko-blanca.jpg", desc: "Twin Pack - 40g - per sachet", price: 13 }
     ],
 
     softdrinks: [
-        { name: "Coke Mismo", image: "coke-mismo.jpg", desc: "Softdrink", price: 20 },
-        { name: "Sprite Mismo", image: "sprite-mismo.jpg", desc: "Softdrink", price: 17 },
-        { name: "Royal Mismo", image: "royal-mismo.jpg", desc: "Softdrink", price: 17 },
-        { name: "Coke 1.5", image: "coke-1.5.jpg", desc: "1.5L bottle", price: 65 },
-        { name: "Sprite 1.5", image: "sprite-1.5.jpg", desc: "1.5L bottle", price: 71 },
-        { name: "Royal 1.5", image: "royal-1.5.jpg", desc: "1.5L bottle", price: 67 }
-    ],
+        { name: "Coke Mismo", image: "coke-mismo.jpg", desc: "290ml - per bottle", price: 20 },
+        { name: "Sprite Mismo", image: "sprite-mismo.jpg", desc: "290ml - per bottle", price: 20 },
+        { name: "Royal Mismo", image: "royal-mismo.jpg", desc: "290ml - per bottle", price: 20 },
+        { name: "Coke 1.5L", image: "coke-1.5.jpg", desc: "1.5L - per bottle", price: 65 },
+        { name: "Sprite 1.5L", image: "sprite-1.5.jpg", desc: "1.5L - per bottle", price: 65 },
+        { name: "Royal 1.5L", image: "royal-1.5.jpg", desc: "1.5L - per bottle", price: 65 }
+    ]
 
 };
 
